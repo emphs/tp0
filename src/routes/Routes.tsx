@@ -9,8 +9,8 @@ import NotFoundPage from "../components/NotFoundPage";
 /**
  * The router configuration for the application.
  */
-export const router = createBrowserRouter([
-    {
+export const router = createBrowserRouter(
+    [{
         path: "/",
         element: <App />,
         children: [
@@ -42,5 +42,6 @@ export const router = createBrowserRouter([
                 element: <NotFoundPage />,
             },
         ],
-    },
-]);
+    }],
+    { basename: "/tp0" }
+);
